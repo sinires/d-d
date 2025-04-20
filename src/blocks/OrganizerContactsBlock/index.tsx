@@ -43,11 +43,11 @@ export const OrganizerContactsBlock: React.FC = () => {
 					Если у вас есть вопросы, свяжитесь с организатором свадьбы:
 				</p>
 				<div className={styles.contacts}>
-					<a href="tel:+71234567890" className={styles.contactLink}>
-						📞 +7 (123) 456-78-90
+					<a href="tel:+79114076700" className={styles.contactLink}>
+						📞 +7 (911) 407-67-00
 					</a>
-					<a href="mailto:organizer@wedding.com" className={styles.contactLink}>
-						✉️ organizer@wedding.com
+					<a href="https://vk.com/lilkashpilka" className={styles.contactLink}>
+						✉️ https://vk.com/lilkashpilka
 					</a>
 				</div>
 			</div>

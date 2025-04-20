@@ -44,7 +44,7 @@ export const DateBlock: React.FC = () => {
 				</div>
 				<div className={styles.date}>
 					<img
-						src="./calendar.png"
+						src="/d-d/calendar.png"
 						alt="Молодожены"
 						className={styles.image}
 					/>

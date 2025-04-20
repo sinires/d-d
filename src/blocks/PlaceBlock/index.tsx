@@ -46,7 +46,7 @@ export const PlaceBlock: React.FC = () => {
 				<div className={styles.mapContainer}>
 					<iframe
 						src="https://yandex.ru/map-widget/v1/?um=constructor%3A4ff7e591f793458613f84a0b8fbeab4980bdc500537346c5f5923db1935fcb9d&amp;source=constructor"
-						width="500" height="400" frameBorder="0"></iframe>
+						width='100%' height="400" frameBorder="0"></iframe>
 				</div>
 			</div>
 		</section>

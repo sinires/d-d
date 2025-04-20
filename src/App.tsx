@@ -13,7 +13,7 @@ import './App.css';
 import {Snowfall} from "react-snowfall";
 
 const image = document.createElement('img')
-image.src = './star.png'
+image.src = '/d-d/star.png'
 
 const images = [image]
 
@@ -35,8 +35,9 @@ function App() {
       ref={ref}
       className="App"
     >
-      <Snowfall images={images} radius={[18,  24]} speed={[0.4, 1]} snowflakeCount={240} style={{
-        height: height
+      <Snowfall images={images} radius={[18,  24]} speed={[0.4, 1]} snowflakeCount={40} style={{
+        position: "fixed",
+        top: 0,
       }} />
       <main className='App-content'>
         {
