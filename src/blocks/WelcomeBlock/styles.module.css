@@ -1,0 +1,53 @@
+.additionalInfoSection {
+    padding: 32px 20px;
+    text-align: center;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.description {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease 0.3s, transform 0.8s ease 0.3s;
+}
+
+.bookContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease 0.6s, transform 0.8s ease 0.6s;
+}
+
+.bookIcon {
+    font-size: 4rem;
+}
+
+.bookText {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.additionalInfoSection.visible .title,
+.additionalInfoSection.visible .description,
+.additionalInfoSection.visible .bookContainer {
+    opacity: 1;
+    transform: translateY(0);
+}
