@@ -39,7 +39,7 @@ export const TitleBlock: React.FC = () => {
 			<div className={styles.container}>
 				<div className={styles.imageContainer}>
 					<img
-						src="/photo_2025-02-22_21-31-50%20(1).png"
+						src="./photo_2025-02-22_21-31-50%20(1).png"
 						alt="Молодожены"
 						className={styles.image}
 					/>
