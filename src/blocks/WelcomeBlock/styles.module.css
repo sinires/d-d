@@ -9,7 +9,7 @@
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
     opacity: 0;
     transform: translateY(20px);
@@ -17,7 +17,7 @@
 }
 
 .description {
-    font-size: 1.2rem;
+    font-size: 2rem;
     max-width: 800px;
     margin: 0 auto 40px;
     opacity: 0;
@@ -50,4 +50,29 @@
 .additionalInfoSection.visible .bookContainer {
     opacity: 1;
     transform: translateY(0);
+}
+
+.leafDecoration {
+    width: 40%;
+    height: 1px;
+    border-bottom: 1px solid #abd0c8;
+    display: flex;
+    justify-self: center;
+    margin-bottom: 16px;
+}
+
+.detailItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.icon {
+    font-size: 1.3rem;
+}
+
+.invitationText {
+    font-size: 1.2rem;
 }

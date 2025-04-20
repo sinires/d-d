@@ -9,7 +9,7 @@
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
     opacity: 0;
     transform: translateY(20px);
@@ -45,15 +45,16 @@
 }
 
 .time {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #333;
 }
 
 .event {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: #555;
     text-align: right;
+
 }
 
 .dateProgramSection.visible .title,

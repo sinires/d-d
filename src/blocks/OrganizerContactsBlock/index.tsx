@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './styles.module.css';
 
-export const TitleBlock: React.FC = () => {
+export const OrganizerContactsBlock: React.FC = () => {
 	const [isVisible, setIsVisible] = useState<boolean>(false);
 	const sectionRef = useRef<HTMLElement>(null);
 
@@ -15,7 +15,7 @@ export const TitleBlock: React.FC = () => {
 					}
 				});
 			},
-			{ threshold: 0.5 } // Срабатывает, когда 50% элемента видно
+			{ threshold: 0.3 } // Срабатывает, когда 30% элемента видно
 		);
 
 		const currentSection = sectionRef.current;
@@ -34,14 +34,22 @@ export const TitleBlock: React.FC = () => {
 	return (
 		<section
 			ref={sectionRef}
-			className={`${styles.heroSection} ${isVisible ? styles.visible : ''}`}
+			className={`${styles.organizerContactsSection} ${isVisible ? styles.visible : ''}`}
+			id="organizer-contacts"
 		>
-			<div className={styles.overlay}></div>
 			<div className={styles.content}>
-				<h1 className={styles.title}>Анна & Иван</h1>
-				<p className={styles.subtitle}>15 сентября 2024</p>
-				<p className={styles.location}>Загородный клуб "Лесная сказка"</p>
-				<button className={styles.ctaButton}>Подробнее</button>
+				<h2 className={styles.title}>Контакты организатора</h2>
+				<p className={styles.description}>
+					Если у вас есть вопросы, свяжитесь с организатором свадьбы:
+				</p>
+				<div className={styles.contacts}>
+					<a href="tel:+71234567890" className={styles.contactLink}>
+						📞 +7 (123) 456-78-90
+					</a>
+					<a href="mailto:organizer@wedding.com" className={styles.contactLink}>
+						✉️ organizer@wedding.com
+					</a>
+				</div>
 			</div>
 		</section>
 	);

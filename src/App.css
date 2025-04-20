@@ -7,6 +7,12 @@
   pointer-events: none;
 }
 
+* {
+  font-family: "Great Vibes", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -34,5 +40,24 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.App-background {
+  width: 100%;
+  height: 100%;
+  position: fixed
+}
+
+.App-item {
+  z-index: 1;
+  position: relative;
+}
+
+.App-content {
+  > :nth-child(2n) {
+    background-color: #e2ede8;
+    z-index: 1;
+    position: relative;
   }
 }

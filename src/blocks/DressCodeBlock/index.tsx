@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './styles.module.css';
 
-export const TitleBlock: React.FC = () => {
+export const DressCodeBlock: React.FC = () => {
 	const [isVisible, setIsVisible] = useState<boolean>(false);
 	const sectionRef = useRef<HTMLElement>(null);
 
@@ -15,7 +15,7 @@ export const TitleBlock: React.FC = () => {
 					}
 				});
 			},
-			{ threshold: 0.5 } // Срабатывает, когда 50% элемента видно
+			{ threshold: 0.3 } // Срабатывает, когда 30% элемента видно
 		);
 
 		const currentSection = sectionRef.current;
@@ -31,17 +31,29 @@ export const TitleBlock: React.FC = () => {
 		};
 	}, []);
 
+	// Цвета для дресс-кода
+	const colors = ['#614c31', '#7c825e', '#bca68f', '#d7b4ae', '#fde8e7']; // Золотой, коричневый, зеленый, фиолетовый, белый
+
 	return (
 		<section
 			ref={sectionRef}
-			className={`${styles.heroSection} ${isVisible ? styles.visible : ''}`}
+			className={`${styles.dressCodeSection} ${isVisible ? styles.visible : ''}`}
+			id="dress-code"
 		>
-			<div className={styles.overlay}></div>
 			<div className={styles.content}>
-				<h1 className={styles.title}>Анна & Иван</h1>
-				<p className={styles.subtitle}>15 сентября 2024</p>
-				<p className={styles.location}>Загородный клуб "Лесная сказка"</p>
-				<button className={styles.ctaButton}>Подробнее</button>
+				<h2 className={styles.title}>Дресс-код</h2>
+				<p className={styles.description}>
+					Нам будет очень приятно, если поддержите цветовую гамму торжества и выберите наряды в соответстви с цветовой палитрой нашей свадьбы.
+				</p>
+				<div className={styles.colorContainer}>
+					{colors.map((color, index) => (
+						<div
+							key={index}
+							className={styles.colorCircle}
+							style={{ backgroundColor: color }}
+						></div>
+					))}
+				</div>
 			</div>
 		</section>
 	);

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './styles.module.css';
 
-export const TitleBlock: React.FC = () => {
+export const DetailsBlock: React.FC = () => {
 	const [isVisible, setIsVisible] = useState<boolean>(false);
 	const sectionRef = useRef<HTMLElement>(null);
 
@@ -15,7 +15,7 @@ export const TitleBlock: React.FC = () => {
 					}
 				});
 			},
-			{ threshold: 0.5 } // Срабатывает, когда 50% элемента видно
+			{ threshold: 0.3 } // Срабатывает, когда 30% элемента видно
 		);
 
 		const currentSection = sectionRef.current;
@@ -34,14 +34,26 @@ export const TitleBlock: React.FC = () => {
 	return (
 		<section
 			ref={sectionRef}
-			className={`${styles.heroSection} ${isVisible ? styles.visible : ''}`}
+			className={`${styles.additionalInfoSection} ${isVisible ? styles.visible : ''}`}
+			id="additional-info"
 		>
-			<div className={styles.overlay}></div>
 			<div className={styles.content}>
-				<h1 className={styles.title}>Анна & Иван</h1>
-				<p className={styles.subtitle}>15 сентября 2024</p>
-				<p className={styles.location}>Загородный клуб "Лесная сказка"</p>
-				<button className={styles.ctaButton}>Подробнее</button>
+				<h2 className={styles.title}>Подарки</h2>
+				<p className={styles.description}>
+					<p>
+					 Если вы хотите подарить нам ценный подарок, мы будем рады вкладу в наше свадебное путешествие ✈️.
+					</p>
+				</p>
+				<div className={styles.line} />
+				<h2 className={styles.title}>Цветы</h2>
+				<p>
+					Мы будем рады, если вместо цветов вы подарите нам книги 📗.<br />
+					Это станет прекрасным вкладом в нашу семейную библиотеку
+					и оставит теплые воспоминания о вашем подарке.
+				</p>
+				<p>
+					<a target='_blank' href='https://vk.com/'>Список книг</a> 📚
+				</p>
 			</div>
 		</section>
 	);

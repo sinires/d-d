@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+p {
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  margin-block: 1rem;
+  > * {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+a {
+  color: #284c3d;
+}

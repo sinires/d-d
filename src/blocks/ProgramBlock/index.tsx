@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './styles.module.css';
 
-export const DateBlock: React.FC = () => {
+export const ProgramBlock: React.FC = () => {
 	const [isVisible, setIsVisible] = useState<boolean>(false);
 	const sectionRef = useRef<HTMLElement>(null);
 
@@ -47,8 +47,7 @@ export const DateBlock: React.FC = () => {
 			id="date-program"
 		>
 			<div className={styles.content}>
-				<h2 className={styles.title}>Дата и программа</h2>
-				<p className={styles.date}>15 сентября 2024 года</p>
+				<h2 className={styles.title}>Программа</h2>
 				<div className={styles.program}>
 					{program.map((item, index) => (
 						<div key={index} className={styles.programItem}>
