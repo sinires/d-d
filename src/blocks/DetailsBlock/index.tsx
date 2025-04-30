@@ -52,7 +52,7 @@ export const DetailsBlock: React.FC = () => {
 					и оставит теплые воспоминания о вашем подарке.
 				</p>
 				<p>
-					<a target='_blank' href='https://vk.com/'>Список книг</a> 📚
+					<a target='_blank' href='https://podarkus.ru/user/763835?utm_source=share&utm_medium=friends&utm_campaign=profile'>Список книг</a> 📚
 				</p>
 			</div>
 		</section>

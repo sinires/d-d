@@ -66,4 +66,7 @@
     border-bottom: 1px solid #aac1b1;
     display: flex;
     justify-self: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
